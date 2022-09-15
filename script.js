@@ -37,7 +37,6 @@ const typeController = (e) => {
     if (!validLetters.includes(newLetter)) {
         return;
     }
-
     userText += newLetter;
 
     const newLetterCorrect = validate(newLetter);
@@ -45,10 +44,11 @@ const typeController = (e) => {
     if (newLetterCorrect) {
         display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
     } else {
-        errorCount++
-        display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span> `;
-        //errorCount++;
+        errorCount++;
+
+        display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
     }
+
 
     // check if given question text is equal to user typed text
     if (questionText === userText) {
@@ -136,8 +136,8 @@ displayHistory();
 setInterval(() => {
     const currentTime = new Date().getTime();
     const timeSpent = (currentTime - startTime) / 1000;
-    const convet = parseFloat(timeSpent)
-    console.log(typeof(convet))
+    const convet = parseInt(timeSpent)
+
 
 
     document.getElementById("show-time").innerHTML = `${startTime ? convet : 0} seconds`;
