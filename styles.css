@@ -24,6 +24,16 @@ header {
     margin: 0 auto;
 }
 
+.blog {
+    text-decoration: none;
+    position: absolute;
+    color: #9dffad;
+    right: 225px;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 #question {
     height: 100px;
     display: flex;
@@ -199,12 +209,15 @@ button {
     }
 }
 
-@media only screen and(max-width:600px) {
+@media only screen and (max-width: 700px) {
+    .box-container {
+        padding: 0 20px;
+        width: 100%;
+    }
     #histories {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        justify-content: space-aroun;
-        gap: 15px;
-        background: rgb(203, 18, 18);
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .blog {
+        right: 10px;
     }
 }

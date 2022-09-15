@@ -17,7 +17,7 @@ body {
     margin: 20px 0;
 }
 
-.blog {
+.home {
     text-decoration: none;
     position: absolute;
     color: #9dffad;
@@ -43,4 +43,17 @@ body {
     width: 70%;
     margin: 0 auto;
     padding: 40px;
+}
+
+@media only screen and (max-width: 700px) {
+    .box-container {
+        padding: 0 20px;
+        width: 100%;
+    }
+    #histories {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .home {
+        right: 10px;
+    }
 }
