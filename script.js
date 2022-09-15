@@ -46,7 +46,7 @@ const typeController = (e) => {
         display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
     } else {
         errorCount++
-        display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter }</span> `;
+        display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span> `;
         //errorCount++;
     }
 
