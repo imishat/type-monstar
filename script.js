@@ -136,9 +136,9 @@ displayHistory();
 setInterval(() => {
     const currentTime = new Date().getTime();
     const timeSpent = (currentTime - startTime) / 1000;
-    const convat = parseInt(timeSpent)
-    console.log(typeof(convat))
+    const convet = parseFloat(timeSpent)
+    console.log(typeof(convet))
 
 
-    document.getElementById("show-time").innerHTML = `${startTime ? convat : 0} seconds`;
+    document.getElementById("show-time").innerHTML = `${startTime ? convet : 0} seconds`;
 }, 1000);
