@@ -18,49 +18,52 @@
     <section id="articles">
         <article>
             <h2>
-                Lokal Storage Vs Session Storage
+                difference between Lokal Storage VS Session Storage
             </h2>
-            <p>
-                <b>Lokal Storage</b>Unlike sessionStorage localStorage continues to store data after the browser is closed. It means that data stored in localStorage does not expire.
-            </p>
-            <p>
-                <b>Session Storage:</b>The sessionStorage object stores data only for a session. It means that the data stored in the sessionStorage will be deleted when the browser is closed.
-            </p>
+            <p><b>Explanation:</b> The difference between localStorage and sessionStorage has to do with lifetime and scope: how long the data is saved for and who the data is accessible to. Session storage is destroyed once the user closes the browser whereas,
+                Local storage stores data with no expiration date. 8.</p>
         </article>
         <article>
             <h2>
-                Global Scope Vs. Block Scope
+                Difference Between Global Scope Vs. Block Scope
 
             </h2>
             <p>
-                <b>Scope</b>Visibility or Accessibility of a variable.
+                <b>
+                    Explanation:
+
+                </b>In a browser environment, the global scope is controlled by the window object while in Node. js, it's controlled by the global object. Block scopes are what you get when you use if statements, for statements, and the
+                like.
             </p>
-            <p>
-                <b>Global Scope:</b>If a variable is declared outside all functions or curly braces ({}), it is said to be defined in the global scope. Once you’ve declared a global variable, you can use that variable anywhere in your code, even in functions.
-            </p>
-            <p>
-                <b>Block Scope:</b> When you declare a variable with const or let within a curly brace ({}), you can access this variable only within that curly brace.
-            </p>
+
         </article>
         <article>
+            <h2>
+                what is undefined in javascript
+            </h2>
+            <p>
+                <b>
+                    Explanation:
+                </b>The undefined property indicates that a variable has not been assigned a value, or not declared at all.
+
+            </p>
+            </p>
             <h2>
                 When do we get undefined in JavaScript?
-
             </h2>
             <p>
-                <b>1. When value is not defined.
+                <b>
+                    1. When you try to access a property of an object that does not exist.
+
                 </b>
             </p>
             <p>
+                <b>
+                    
                 <b>
                     2. When a function does not return anything it return undefined.
 
                 </b>
-            </p>
-            <p>
-                <b>
-                    3. When you try to access a property of an object that does not exist.
-
                 </b>
             </p>
         </article>
@@ -70,7 +73,7 @@
 
             </h2>
             <p>
-                <b>Event Loop:</b>It's a fundamental piece of the JavaScript engine that always monitor call stack, task queue and microtask queue. If the call stack is empty it puts callback function in call stact from task queues.
+                <b>Explanation:</b>It's a fundamental piece of the JavaScript engine that always monitor call stack, task queue and microtask queue. If the call stack is empty it puts callback function in call stact from task queues.
             </p>
         </article>
     </section>
