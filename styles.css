@@ -198,3 +198,13 @@ button {
         flex-direction: column;
     }
 }
+
+@media only screen and(max-width:600px) {
+    #histories {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-aroun;
+        gap: 15px;
+        background: rgb(203, 18, 18);
+    }
+}
